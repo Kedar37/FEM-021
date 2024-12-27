@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(/images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+h3{
+    font-size: min(1.2rem, 2rem);
+    color: hsl(229, 23%, 23%);
+}
+
+.card{
+    width: 90%;
+    max-width: 350px;
+    height: 370px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+
+    @media (min-width: 700px) {
+        height: 370px;
+    }
+}
+
+.card-bg-img > img{
+    border-radius: 1rem 1rem 0 0;
+    height: 40%;
+}
+
+main{
+    padding: 1rem 0;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-pic{
+    width: 100px;
+    border-radius: 100px;
+    border: 5px solid white;
+
+    position: absolute;
+    transform: translateY(-70px);
+}
+
+.username{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.name{
+    margin-right: 0.5rem;
+}
+
+.age{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.location{
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+}
+
+footer{
+    height: 20%;
+    border-top: 1px solid rgb(198, 198, 198);
+    padding: 1rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.col{
+    text-align: center;
+}
+
+.col > p{
+    font-size: 10px;
+    letter-spacing: 2px;
+}
